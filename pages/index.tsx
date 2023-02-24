@@ -1,15 +1,20 @@
 import type { NextPage } from 'next'
 import Layout from '../components/Layout'
+import data from '../utils/data'
+import ProductCard from '../components/ProductCard'
 
 const Home: NextPage = () => {
+    const { products } = data
     return (
         <Layout>
             <div>
                 <h1>Products</h1>
-                <ul>
-                    <li>Product 1</li>
-                    <li>Product 2</li>
-                    <li>Product 3</li>
+                <ul className='grid grid-cols-3 gap-3'>
+                    {products.map((item) => (
+                        <li>
+                            <ProductCard product={item} key={item.image} />
+                        </li>
+                    ))}
                 </ul>
             </div>
         </Layout>
