@@ -29,7 +29,7 @@ const ProductCard = ({ product }: props) => {
                         <img src={image} alt={name} />
                     </Link>
                 </div>
-                <div className='m-2'>
+                <div className='my-2 mx-4'>
                     <p className=''>
                         {' '}
                         <Link href={`/product/${slug}`}>{name}</Link>
