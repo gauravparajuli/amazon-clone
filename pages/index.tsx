@@ -11,8 +11,8 @@ const Home: NextPage = () => {
                 <h1>Products</h1>
                 <ul className='grid grid-cols-3 gap-3'>
                     {products.map((item) => (
-                        <li>
-                            <ProductCard product={item} key={item.image} />
+                        <li key={item.image}>
+                            <ProductCard product={item} />
                         </li>
                     ))}
                 </ul>

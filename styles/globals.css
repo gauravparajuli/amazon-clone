@@ -7,6 +7,7 @@
 @layer base {
     html {
         font-family: 'Roboto', sans-serif;
+        /* background-color: #208080; */
     }
     h1 {
         @apply text-3xl;
