@@ -37,7 +37,7 @@ const ProductCard = ({ product }: props) => {
                     <div className='flex gap-2 items-center justify-between'>
                         <span>${price}</span>
                         <div>
-                            <button className='flex gap-2'>
+                            <button className='flex gap-2 hover:underline text-cOrange'>
                                 <svg
                                     xmlns='http://www.w3.org/2000/svg'
                                     fill='none'

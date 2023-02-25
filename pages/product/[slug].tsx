@@ -21,7 +21,10 @@ const Product = () => {
                 {!product && (
                     <div className='h-[90vh] flex flex-col items-center justify-center gap-2'>
                         <h1>No product found!</h1>
-                        <Link className='hover:underline flex gap-2' href='/'>
+                        <Link
+                            className='hover:underline flex gap-2 text-cOrange'
+                            href='/'
+                        >
                             <svg
                                 xmlns='http://www.w3.org/2000/svg'
                                 fill='none'
@@ -47,7 +50,7 @@ const Product = () => {
                         </h1>
                         <div className='col-span-3'>
                             <Link
-                                className='flex gap-2 items-center w-[100px] p-2 hover:underline'
+                                className='flex gap-2 items-center w-[100px] p-2 hover:underline text-cOrange'
                                 href='/'
                             >
                                 <svg
@@ -98,7 +101,7 @@ const Product = () => {
                                             : 'Out of Stock'}
                                     </div>
 
-                                    <button className='flex gap-2 col-span-2 justify-center'>
+                                    <button className='mt-2 flex gap-2 col-span-2 justify-center p-2 bg-cOrange rouned rounded-md hover:bg-gray-600 transition-all hover:text-white ease-in-out'>
                                         <svg
                                             xmlns='http://www.w3.org/2000/svg'
                                             fill='none'
